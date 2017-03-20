@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <style>
+	body{
+	background-image: url("background.jpg");
+	}
+
+	div {
+    	margin-top: 100px;
+    	margin-bottom: 100px;
+    	margin-right: 150px;
+    	margin-left: 200px;
+	}
+     </style>
+<meta charset="utf-8"> <!--for international compliance-->
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--For mobal devise compatability-->
+
     <script>
-      // JavaScript function definition here
+      var scoutRanks = ["Scout", "Tenderfoot", "Second Class", "First Class", "Star", "Life", "Eagle"];
     </script> 
   </head>
   
   <body>
-    <!-- Your page here (can include more script tags) -->
-    
+  
+  <div class="container-fluid">
+  <button type="button" onclick="document.write('Welcome to scouting')" class="btn btn-default">Welcome</button>  <p id="demo"></p>
+  <script>
+  var text = "";
+    for(i = 0 ; i < scoutRanks.length; i++)
+	{
+	  text += scoutRanks[i] + "<br>";
+	}
+	document.getElementById("demo").innerHTML = text;
+  </script>
+
+     
+  </div>
   </body>
 </html>
